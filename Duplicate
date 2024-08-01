@@ -1,0 +1,8 @@
+    return list(dict.fromkeys(lst))
+num_elements = int(input("Enter the number of elements in the list: "))
+elements = []
+for i in range(num_elements):
+    element = int(input(f"Element {i + 1}: "))
+    elements.append(element)
+non_duplicate_items = remove_duplicates(elements)
+print("Non duplicate items =", *non_duplicate_items)
